@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir ~/.aws /tmp/cache
+mkdir -p ~/.aws /tmp/cache $MOUNTPOINT
 cat<<EOF>~/.aws/credentials
 [default]
 aws_access_key_id = $S3_ACCESS_KEY_ID
